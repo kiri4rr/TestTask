@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B15055A2A1C19FF006C362A /* ZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1505592A1C19FF006C362A /* ZoneView.swift */; };
+		4B15055D2A1C1A3A006C362A /* ViewWithTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15055C2A1C1A3A006C362A /* ViewWithTextFields.swift */; };
+		4B1505602A1C1A71006C362A /* ExpandeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15055F2A1C1A71006C362A /* ExpandeableView.swift */; };
+		4B8704082A18F7BF009269E6 /* ParametersOfZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8704072A18F7BF009269E6 /* ParametersOfZones.swift */; };
+		4B87040B2A18F814009269E6 /* ParametersOfZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87040A2A18F814009269E6 /* ParametersOfZone.swift */; };
+		4B87040E2A1A2122009269E6 /* AlertConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87040D2A1A2122009269E6 /* AlertConstants.swift */; };
+		4B8704112A1A695D009269E6 /* ProtocoOfTouches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8704102A1A695D009269E6 /* ProtocoOfTouches.swift */; };
+		4B87041C2A1AB520009269E6 /* SingleTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87041B2A1AB51F009269E6 /* SingleTouchView.swift */; };
+		4B87041F2A1AB52E009269E6 /* MultiTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87041E2A1AB52E009269E6 /* MultiTouchView.swift */; };
 		4BF375392A16AD5700931BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF375382A16AD5700931BFB /* AppDelegate.swift */; };
 		4BF3753B2A16AD5700931BFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3753A2A16AD5700931BFB /* SceneDelegate.swift */; };
 		4BF3753D2A16AD5700931BFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3753C2A16AD5700931BFB /* ContentView.swift */; };
 		4BF3753F2A16AD5B00931BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3753E2A16AD5B00931BFB /* Assets.xcassets */; };
 		4BF375422A16AD5B00931BFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF375412A16AD5B00931BFB /* Preview Assets.xcassets */; };
 		4BF375452A16AD5B00931BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF375432A16AD5B00931BFB /* LaunchScreen.storyboard */; };
+		4BF3754E2A16AF9200931BFB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3754D2A16AF9100931BFB /* ViewModel.swift */; };
+		4BF375522A1808E900931BFB /* CustomDisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF375512A1808E900931BFB /* CustomDisclosureGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1505592A1C19FF006C362A /* ZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneView.swift; sourceTree = "<group>"; };
+		4B15055C2A1C1A3A006C362A /* ViewWithTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithTextFields.swift; sourceTree = "<group>"; };
+		4B15055F2A1C1A71006C362A /* ExpandeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandeableView.swift; sourceTree = "<group>"; };
+		4B8704072A18F7BF009269E6 /* ParametersOfZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersOfZones.swift; sourceTree = "<group>"; };
+		4B87040A2A18F814009269E6 /* ParametersOfZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersOfZone.swift; sourceTree = "<group>"; };
+		4B87040D2A1A2122009269E6 /* AlertConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConstants.swift; sourceTree = "<group>"; };
+		4B8704102A1A695D009269E6 /* ProtocoOfTouches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocoOfTouches.swift; sourceTree = "<group>"; };
+		4B87041B2A1AB51F009269E6 /* SingleTouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTouchView.swift; sourceTree = "<group>"; };
+		4B87041E2A1AB52E009269E6 /* MultiTouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTouchView.swift; sourceTree = "<group>"; };
 		4BF375352A16AD5700931BFB /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF375382A16AD5700931BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF3753A2A16AD5700931BFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +44,8 @@
 		4BF375412A16AD5B00931BFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BF375442A16AD5B00931BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BF375462A16AD5B00931BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF3754D2A16AF9100931BFB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4BF375512A1808E900931BFB /* CustomDisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDisclosureGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +59,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1505632A1C1A92006C362A /* ElementsOfContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4B1505592A1C19FF006C362A /* ZoneView.swift */,
+				4B15055C2A1C1A3A006C362A /* ViewWithTextFields.swift */,
+				4B15055F2A1C1A71006C362A /* ExpandeableView.swift */,
+			);
+			path = ElementsOfContentView;
+			sourceTree = "<group>";
+		};
+		4B8704212A1C0D5E009269E6 /* ParametersOfUIElement */ = {
+			isa = PBXGroup;
+			children = (
+				4B8704072A18F7BF009269E6 /* ParametersOfZones.swift */,
+				4B87040A2A18F814009269E6 /* ParametersOfZone.swift */,
+			);
+			path = ParametersOfUIElement;
+			sourceTree = "<group>";
+		};
+		4B8704222A1C0D9C009269E6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4B87040D2A1A2122009269E6 /* AlertConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4B8704232A1C0DAE009269E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4B8704102A1A695D009269E6 /* ProtocoOfTouches.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4B8704242A1C0DBA009269E6 /* CustomUIView */ = {
+			isa = PBXGroup;
+			children = (
+				4BF375512A1808E900931BFB /* CustomDisclosureGroup.swift */,
+				4B87041B2A1AB51F009269E6 /* SingleTouchView.swift */,
+				4B87041E2A1AB52E009269E6 /* MultiTouchView.swift */,
+			);
+			path = CustomUIView;
+			sourceTree = "<group>";
+		};
+		4B8704252A1C0DD6009269E6 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4BF3753C2A16AD5700931BFB /* ContentView.swift */,
+				4BF3754D2A16AF9100931BFB /* ViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		4BF3752C2A16AD5700931BFB = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +132,14 @@
 		4BF375372A16AD5700931BFB /* TestTask */ = {
 			isa = PBXGroup;
 			children = (
+				4B1505632A1C1A92006C362A /* ElementsOfContentView */,
+				4B8704252A1C0DD6009269E6 /* MVVM */,
+				4B8704242A1C0DBA009269E6 /* CustomUIView */,
+				4B8704232A1C0DAE009269E6 /* Protocols */,
+				4B8704222A1C0D9C009269E6 /* Constants */,
+				4B8704212A1C0D5E009269E6 /* ParametersOfUIElement */,
 				4BF375382A16AD5700931BFB /* AppDelegate.swift */,
 				4BF3753A2A16AD5700931BFB /* SceneDelegate.swift */,
-				4BF3753C2A16AD5700931BFB /* ContentView.swift */,
 				4BF3753E2A16AD5B00931BFB /* Assets.xcassets */,
 				4BF375432A16AD5B00931BFB /* LaunchScreen.storyboard */,
 				4BF375462A16AD5B00931BFB /* Info.plist */,
@@ -146,8 +227,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF375392A16AD5700931BFB /* AppDelegate.swift in Sources */,
+				4BF375522A1808E900931BFB /* CustomDisclosureGroup.swift in Sources */,
+				4B87041C2A1AB520009269E6 /* SingleTouchView.swift in Sources */,
+				4B8704082A18F7BF009269E6 /* ParametersOfZones.swift in Sources */,
+				4B15055A2A1C19FF006C362A /* ZoneView.swift in Sources */,
+				4B15055D2A1C1A3A006C362A /* ViewWithTextFields.swift in Sources */,
+				4B8704112A1A695D009269E6 /* ProtocoOfTouches.swift in Sources */,
 				4BF3753B2A16AD5700931BFB /* SceneDelegate.swift in Sources */,
+				4B1505602A1C1A71006C362A /* ExpandeableView.swift in Sources */,
+				4B87040E2A1A2122009269E6 /* AlertConstants.swift in Sources */,
+				4BF3754E2A16AF9200931BFB /* ViewModel.swift in Sources */,
 				4BF3753D2A16AD5700931BFB /* ContentView.swift in Sources */,
+				4B87041F2A1AB52E009269E6 /* MultiTouchView.swift in Sources */,
+				4B87040B2A18F814009269E6 /* ParametersOfZone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

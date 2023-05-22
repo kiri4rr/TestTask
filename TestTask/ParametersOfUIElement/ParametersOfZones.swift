@@ -8,8 +8,8 @@
 import SwiftUI
 
 class ParametersOfZones: ObservableObject {
-    @Published var heightOfFirstZone: CGFloat = 266.66
-    @Published var heightOfSecondZone: CGFloat = 133.33
+    @Published var heightOfFirstZone: CGFloat = 0
+    @Published var heightOfSecondZone: CGFloat = 0
     
     func hideSecondZone() {
         heightOfSecondZone = 0

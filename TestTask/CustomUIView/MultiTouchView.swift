@@ -11,8 +11,8 @@ import SwiftUI
 struct MultiTouchUIView : UIViewRepresentable {
     typealias UIViewType = MultiTouchView
     
-    var onTouchBegan: ((Set<UITouch>, UIEvent?) -> Void)?
-    var onTouchEnded: ((Set<UITouch>, UIEvent?) -> Void)?
+    var onTouchBegan: ((Set<UITouch>, UIEvent?, UIView?) -> Void)?
+    var onTouchEnded: ((Set<UITouch>, UIEvent?, UIView?) -> Void)?
     
     func makeUIView(context: Context) -> MultiTouchView {
         let view = MultiTouchView()
@@ -31,17 +31,17 @@ struct MultiTouchUIView : UIViewRepresentable {
 
 class MultiTouchView : UIView {
     
-    var onTouchBegan: ((Set<UITouch>, UIEvent?) -> Void)?
-    var onTouchEnded: ((Set<UITouch>, UIEvent?) -> Void)?
+    var onTouchBegan: ((Set<UITouch>, UIEvent?, UIView?) -> Void)?
+    var onTouchEnded: ((Set<UITouch>, UIEvent?, UIView?) -> Void)?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        onTouchBegan?(touches, event)
+        onTouchBegan?(touches, event, self)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        onTouchEnded?(touches, event)
+        onTouchEnded?(touches, event, self)
     }
 }
 

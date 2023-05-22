@@ -30,27 +30,8 @@ struct ZoneView: View {
                         .stroke(Color.black, lineWidth: 5))
             .background(
                 VStack(spacing: 5){
-                    
-                    MultiTouchUIView { (touches, event) in
-                        print("Count of touches = \(touches.count)")
-                        proccessTouchDown(touches)
-                    } onTouchEnded: { (touches, event) in
-                        print("Count of touches = \(touches.count)")
-                        proccessTouchUp(touches)
-                    }
-                    .frame(width: parametersOfZone.width,
-                           height: parametersOfZones.heightOfFirstZone)
-                    .background(Color.yellow)
-                    
-                    SingleTouchUIView {
-                        viewModel.onBlueZoneEvent(isPressed: true)
-                    } onTouchEnded: {
-                        viewModel.onBlueZoneEvent(isPressed: false)
-                    }
-                    .frame(width: parametersOfZone.width,
-                           height: parametersOfZones.heightOfSecondZone)
-                    .background(Color.blue)
-                    
+                    multiView
+                    singleView
                 }
                 .background(Color.black)
                 .clipShape(RoundedRectangle(cornerRadius: 25.0))
@@ -58,12 +39,32 @@ struct ZoneView: View {
             .position(x: parametersOfZone.x, y: parametersOfZone.y)
     }
     
-    private func proccessTouchDown(_ touches: Set<UITouch>){
-        print("Touch on multitouch's view was began \n")
+    var multiView: some View {
+        MultiTouchUIView { (touches, event, view) in
+            proccessTouchDown(touches, view)
+        } onTouchEnded: { (touches, event, view) in
+            proccessTouchUp(touches, view)
+        }
+        .frame(width: parametersOfZone.width,
+               height: parametersOfZones.heightOfFirstZone)
+        .background(Color.yellow)
+    }
+    
+    var singleView: some View {
+        SingleTouchUIView {
+            viewModel.onBlueZoneEvent(isPressed: true)
+        } onTouchEnded: {
+            viewModel.onBlueZoneEvent(isPressed: false)
+        }
+        .frame(width: parametersOfZone.width,
+               height: parametersOfZones.heightOfSecondZone)
+        .background(Color.blue)
+    }
+    
+    private func proccessTouchDown(_ touches: Set<UITouch>, _ view: UIView?){
         var index = 0
         touches.forEach { (touch) in
-            print(touch.hash)
-            let position = touch.location(in: nil)
+            let position = touch.location(in: view)
             let procentValuesOfFrame = viewModel.getProcentToWidthAndHeight(x: Double(position.x),
                                                                             width: Double(parametersOfZone.width),
                                                                             y: Double(position.y),
@@ -74,13 +75,12 @@ struct ZoneView: View {
                                         hash: touch.hash)
             index += 1
         }
-
+        
     }
     
-    private func proccessTouchUp(_ touches: Set<UITouch>) {
-        print("Touch on multitouch's view was ended \n")
+    private func proccessTouchUp(_ touches: Set<UITouch>, _ view: UIView?) {
         touches.forEach { (touch) in
-            let position = touch.location(in: nil)
+            let position = touch.location(in: view)
             let procentValuesOfFrame = viewModel.getProcentToWidthAndHeight(x: Double(position.x),
                                                                             width: Double(parametersOfZone.width),
                                                                             y: Double(position.y),

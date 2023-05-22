@@ -35,16 +35,14 @@ class SingleTouchView : UIView {
     var onTouchEnded: (() -> Void)?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print(touches.count)
-        if touches.count == 1 {
+        if touches.count == 1 {                 // This use if .isMultipleTouchEnabled of view is true
             super.touchesBegan(touches, with: event)
             onTouchBegan?()
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print(touches.count)
-        if touches.count == 1 {
+        if touches.count == 1 {                 // This use if .isMultipleTouchEnabled of view is true
             super.touchesEnded(touches, with: event)
             onTouchEnded?()
         }
